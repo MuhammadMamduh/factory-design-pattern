@@ -1,6 +1,7 @@
 import factory.*;
 import product.bed.Bed;
 import product.bed.ClassicBed;
+import product.bed.ModernBed;
 import product.desk.Desk;
 import product.desk.ModernDesk;
 
@@ -14,7 +15,17 @@ public class Main {
         FurnitureFactory modernFactory = new ClassicFurnitureFactory();
 
         Bed classicBed = new ClassicBed(classicFactory);
+        classicBed.fold();
+        System.out.println(" ****** ");
+
+        Bed modernBed = new ModernBed(modernFactory);
+        modernBed.unfold();
+        System.out.println(" ****** ");
+
         Desk modernDesk = new ModernDesk(modernFactory);
+        modernDesk.openTheDrawer();
+        System.out.println(" ****** ");
+
 
 
 

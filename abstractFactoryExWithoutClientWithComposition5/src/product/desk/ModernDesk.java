@@ -8,10 +8,11 @@ public class ModernDesk extends Desk{
     // constructor
     public ModernDesk(FurnitureFactory factory){
         this.factory = factory;
-        System.out.println("Modern Desk is created");
     }
     @Override
     public void openTheDrawer() {
+        System.out.println("Creation");
+        Desk desk = factory.createDesk();
         System.out.println("Modern Desk drawer is OPEN");
     }
 }
