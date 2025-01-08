@@ -1,9 +1,9 @@
 package factory;
 
-import product.bed.Bed;
-import product.desk.Desk;
+import product.chair.Chair;
+import product.table.Table;
 
 public interface FurnitureFactory {
-    Bed createBed();
-    Desk createDesk();
+    Chair createChair();
+    Table createTable();
 }

@@ -1,19 +1,19 @@
 package factory;
 
-import product.bed.*;
-import product.desk.*;
+import product.chair.*;
+import product.table.*;
 
 public class ClassicFurnitureFactory implements FurnitureFactory {
 
 
     @Override
-    public Bed createBed() {
-        System.out.println("Classic Bed is created");
-        return new ClassicBed(this);
+    public Chair createChair() {
+        System.out.println("Classic Chair is created");
+        return new ClassicChair(this);
     }
 
     @Override
-    public Desk createDesk() {
-        System.out.println("Classic Desk is created");
-        return new ClassicDesk(this); }
+    public Table createTable() {
+        System.out.println("Classic Table is created");
+        return new ClassicTable(this); }
 }

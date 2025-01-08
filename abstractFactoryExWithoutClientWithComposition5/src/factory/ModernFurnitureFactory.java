@@ -1,18 +1,18 @@
 package factory;
 
-import product.bed.*;
-import product.desk.*;
+import product.chair.*;
+import product.table.*;
 
 public class ModernFurnitureFactory implements FurnitureFactory {
     @Override
-    public Bed createBed() {
-        System.out.println("Modern Bed is created");
-        return new ModernBed(this);
+    public Chair createChair() {
+        System.out.println("Modern Chair is created");
+        return new ModernChair(this);
     }
 
     @Override
-    public Desk createDesk() {
-        System.out.println("Modern Desk is created");
-        return new ModernDesk(this);
+    public Table createTable() {
+        System.out.println("Modern Table is created");
+        return new ModernTable(this);
     }
 }
